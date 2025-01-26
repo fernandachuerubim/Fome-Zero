@@ -19,4 +19,4 @@ def qtd_cuisines(df):
 
 @st.cache_data
 def read_processed_data():
-    return pd.read_csv("data\processed_data.csv")
+    return pd.read_csv("data/processed_data.csv")
