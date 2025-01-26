@@ -117,7 +117,7 @@ def write_metrics(df):
 
 def top_cuisines_melhores(df, countries, top_n):
     lines = (df["country"].isin(countries))
-    df_aux = (df.loc[ lines, ["restaurant_name", "aggregate_rating", "cuisines"]]
+    df_aux = (df.loc[ lines, ["aggregate_rating", "cuisines"]]
             .groupby(["cuisines"])
             .mean()
             .sort_values("aggregate_rating", ascending=False)
@@ -141,7 +141,7 @@ def top_cuisines_melhores(df, countries, top_n):
 
 def top_cuisines_piores(df, countries, top_n):
     lines = (df["country"].isin(countries))
-    df_aux = (df.loc[ lines, ["restaurant_name", "aggregate_rating", "cuisines"]]
+    df_aux = (df.loc[ lines, ["aggregate_rating", "cuisines"]]
             .groupby(["cuisines"])
             .mean()
             .sort_values("aggregate_rating", ascending=True)
