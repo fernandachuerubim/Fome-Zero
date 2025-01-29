@@ -37,4 +37,5 @@ st.write('###### Análise das métricas relacionadas aos diversos tipos de culin
 
 st.markdown('___')
 st.markdown('### Contato do Cientista de Dados: Fernanda Chuerubim')
+st.write('##### Email para contato: fernanda.chuerubimfc@gmail.com')
 st.write('##### Time de Data Science no Discord: @fernanda.3458')
